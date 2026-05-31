@@ -8,7 +8,7 @@
   <arg name="server_uri" default="" description="The URI of the api server to transmit state and task information."/>
   <arg name="output" default="screen"/>
 
-  <let name="use_sim_time_flag" if="$(var use_sim_time)" value=" -sim"/>
+  <let name="use_sim_time_flag" if="$(var use_sim_time)" value="-sim"/>
   <let name="use_sim_time_flag" unless="$(var use_sim_time)" value=""/>
 
   <!-- Fleet adapter -->
