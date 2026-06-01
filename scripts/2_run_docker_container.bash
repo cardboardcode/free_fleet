@@ -18,6 +18,7 @@ free_fleet_adapter:jazzy bash -c \
 ros2 launch free_fleet_adapter fleet_adapter.launch.xml \
 config_file:=$CONFIG_FILE \
 nav_graph_file:=$NAV_GRAPH_FILE \
-server_uri:=$TRAJECTORY_SERVER_URL"
+server_uri:=$TRAJECTORY_SERVER_URL \
+use_sim_time:=true"
 
 

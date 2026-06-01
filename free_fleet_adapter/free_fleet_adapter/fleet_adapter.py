@@ -277,6 +277,8 @@ def main(argv=sys.argv):
     )
     args = parser.parse_args(args_without_ros[1:])
 
+    print(f"args.use_sim_time = {args.use_sim_time}", flush=True)
+
     start_fleet_adapter(
         config_path=args.config_file,
         nav_graph_path=args.nav_graph,
